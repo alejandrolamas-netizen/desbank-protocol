@@ -2,43 +2,35 @@
 
 **EmergentSoft · RWA Financial Infrastructure**
 
-## What it is
+## Status
 
-Desbank is the financial-rails component of EmergentSoft's asset-tokenization architecture, designed to connect tokenized real-world assets with governed liquidity and financial workflows.
+**Legacy / historical protocol implementation.**
 
-## Business problem
+This repository is retained as part of the evolution of the GreenLedger / Desbank workstream. It should not be treated as the canonical implementation for current network-specific deployments.
 
-Tokenized assets require more than smart contracts: they need controlled issuance, verification, liquidity workflows and an auditable path from real-world assets to financial operations.
+For current EVM work, use the dedicated **GreenLedger / Desbank Ethereum/Base** and **Arbitrum** repositories.
 
-## Core capabilities
+## Architecture role
 
-- RWA-oriented financial infrastructure
-- Asset-tokenization integration
-- AI-attestation and verification patterns
-- Governed financial workflows
-- Web3 interoperability
+Desbank represents the financial-rail layer in the broader:
 
-## Architecture position
+`Real-World Assets → GreenLedger → Desbank → Financial Workflows`
 
-`Real-World Assets → GreenLedger → Desbank → Financial Rails`
+architecture.
 
-Desbank is a financial-infrastructure component. It is distinct from the M8s/Mates orchestration layer and from network-specific implementations such as the Ethereum/Base and Arbitrum tracks.
+## Evidence policy
 
-## Evidence & status
+The repository documents the implementation that exists here. It does not establish a live production deployment, regulated financial service, active liquidity venue, or current network deployment unless independently verified.
 
-The repository is the technical source for the available protocol implementation. Live deployment addresses, transaction hashes and production claims must only be published when independently verified.
+## Current workstreams
+
+- **EVM / Base:** see `Greeenledger-Desbank-eth`
+- **Arbitrum:** see `GreenLedger-Desbank-Arbitrum`
+- **XRPL:** maintained separately
 
 ## Security & IP
 
-See [`SECURITY.md`](SECURITY.md) and [`LICENSE`](LICENSE). Third-party components remain subject to their respective licenses.
-
-## Documentation
-
-Protocol, deployment and verification documentation should be maintained in-repository.
-
-## Commercial role
-
-Desbank supports EmergentSoft's enterprise RWA offering by providing financial-rail infrastructure for asset tokenization, liquidity and governed digital-asset workflows.
+See `SECURITY.md` and `LICENSE`.
 
 ## Owner
 
