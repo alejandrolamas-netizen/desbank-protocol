@@ -1,37 +1,35 @@
-# Desbank Protocol 💳
+# Desbank — Workflow and Integration Layer
 
-**EmergentSoft · RWA Financial Infrastructure**
+**EmergentSoft · GreenLedger / Desbank product family**
 
 ## Status
 
-**Legacy / historical protocol implementation.**
+**Historical concept / pre-commercial product definition.** This repository is retained for context and product evolution. It is not the canonical implementation for current EVM network deployments and does not evidence an active financial protocol.
 
-This repository is retained as part of the evolution of the GreenLedger / Desbank workstream. It should not be treated as the canonical implementation for current network-specific deployments.
+## Proposed architecture role
 
-For current EVM work, use the dedicated **GreenLedger / Desbank Ethereum/Base** and **Arbitrum** repositories.
+Desbank is the proposed workflow and integration layer in the product family:
 
-## Architecture role
+Real-world asset evidence → GreenLedger → Desbank workflows → customer systems.
 
-Desbank represents the financial-rail layer in the broader:
-
-`Real-World Assets → GreenLedger → Desbank → Financial Workflows`
-
-architecture.
-
-## Evidence policy
-
-The repository documents the implementation that exists here. It does not establish a live production deployment, regulated financial service, active liquidity venue, or current network deployment unless independently verified.
+GreenLedger is the asset-evidence and tokenization-control layer. Desbank may later provide asset onboarding, evidence workflows, policy approvals, reporting and customer-system integrations after those capabilities are specified and implemented.
 
 ## Current workstreams
 
-- **EVM / Base:** see `Greeenledger-Desbank-eth`
-- **Arbitrum:** see `GreenLedger-Desbank-Arbitrum`
-- **XRPL:** maintained separately
+- Ethereum / Base: https://github.com/alejandrolamas-netizen/Greeenledger-Desbank-eth
+- Arbitrum: https://github.com/alejandrolamas-netizen/GreenLedger-Desbank-Arbitrum
+- XRPL: separate historical workstream.
+
+## Evidence boundary
+
+This repository does not establish active liquidity, lending, deposits, yield, production vaults, exchange, redemption, custody, bank integrations, mainnet deployment, audit, regulatory approval or legal title.
+
+See [PRODUCT-STATUS.md](PRODUCT-STATUS.md) for the current scope, exclusions and release rules.
 
 ## Security & IP
 
-See `SECURITY.md` and `LICENSE`.
+See SECURITY.md and LICENSE.
 
 ## Owner
 
-Alejandro Lamas — Founder & CEO, EmergentSoft
+EmergentSoft
